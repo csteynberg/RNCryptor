@@ -1,3 +1,11 @@
+# Important Security Note
+
+The version of RNCryptor on master has a significant security vulnerability. See [robnapier.net](http://robnapier.net/blog/rncryptor-hmac-vulnerability-827) for details.
+The version on the [issue44](https://github.com/rnapier/RNCryptor/tree/issue44) branch should resolve this problem. It
+changes the file format, and so is incompatible with previous versions. If you need to be able to decrypt v1 files, you
+can define `RNCRYPTOR_ALLOW_V1_BAD_HMAC` while building. I should have this moved to master and better documented by 
+the week of Jan 21, 2013.
+
 # Overview
 
 Encryptor/Decryptor for iOS
